@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { Router } from 'react-router-dom'
@@ -119,7 +120,7 @@ describe('<PokemonPage />', () => {
     })
 
     expect(screen.getByText('Previous')).toHaveAttribute('href', '/pokemon/ditto')
-    expect(screen.getByText('Next')).toHaveAttribute('href', '/pokemon/vaporeon')
+    expect(screen.getByText('Next')).toHaveAttribute('href', '/pokemon/ditto')
   })
 
   it('should not render previous and next urls if none exist', async () => {
