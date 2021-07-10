@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 19px;
 }
 
 body > div {
@@ -18,7 +18,7 @@ body > div {
 
 footer {
   color: #888;
-  font-size: 12px;
+  font-size: 13px;
   flex-shrink: 0;
 }
 
