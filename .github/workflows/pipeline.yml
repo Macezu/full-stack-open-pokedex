@@ -35,3 +35,4 @@ jobs:
           heroku_email: macez@hotmail.com
           healthcheck: https://pokemon-app-marco.herokuapp.com/health
           checkstring: ok
+          rollbackonhealthcheckfailed: true
