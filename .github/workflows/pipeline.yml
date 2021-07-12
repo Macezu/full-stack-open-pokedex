@@ -28,7 +28,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           command: npm run test:e2e
-          start: npm run start-pro
+          start: npm run start-prod
           wait-on: http://localhost:5000
       - name: heroku deploy
         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ' '), '#skip') }}
