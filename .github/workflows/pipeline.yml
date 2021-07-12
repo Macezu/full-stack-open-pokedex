@@ -59,7 +59,7 @@ jobs:
         uses: 8398a7/action-slack@v3
         with:
           status: custom
-          fields: repo,message # selectable (default: repo,message)
+          fields: repo,message,commit,author,took # selectable (default: repo,message)
           custom_payload: | 
               {
                 text: `New version has been deployed to https://pokedexapp-fullstackopen.herokuapp.com/ (${process.env.AS_COMMIT}) by ${process.env.AS_AUTHOR} build took ${process.env.AS_TOOK}`
