@@ -1,5 +1,15 @@
+name: Periodic Health Check
+
+on:
+  push:
+    branches:
+      - master
+    pull_request:    
+      branches: [main]    
+      types: [opened, synchronize]
+      
 jobs:
-  simple_deployment_pipeline:
+  Periodic_Health_Check:
     runs-on: ubuntu-18.04
     steps:
       - name: Check the deployed service URL
